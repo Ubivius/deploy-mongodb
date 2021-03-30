@@ -1,0 +1,21 @@
+service:
+  type: LoadBalancer
+  
+resources: 
+  requests:
+    cpu: 100m
+    memory: 256Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi
+
+# Define separate resources per arbiter, which are less then primary or secondary
+# used only when replica set is enabled
+resourcesArbiter:
+  requests:
+    cpu: 100m
+    memory: 256Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi
+
