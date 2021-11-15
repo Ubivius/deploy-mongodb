@@ -23,7 +23,8 @@ $ helm repo update
 To install the chart with the release name `mongodb`:
 
 ```console
-$ helm install mongodb --version <version> bitnami/mongodb -f chart/values.yaml
+$ helm install mongodb --version <version> bitnami/mongodb -f values.yaml
+$ kubectl apply -f configmap.yaml
 ```
 
 ## Uninstalling the Chart
