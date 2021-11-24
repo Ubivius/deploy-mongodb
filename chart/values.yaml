@@ -19,3 +19,16 @@ resourcesArbiter:
     cpu: 100m #default 500m
     memory: 512Mi
 
+ingress:
+  enabled: true
+  annotations: {}
+    # kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"
+  path: /
+  hosts:
+    - mongodb.admin.dev.ubivius.tk
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
