@@ -32,9 +32,3 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
-
-ingressRoute:
-  enabled: true
-  match: Host(`mongodb.admin.dev.ubivius.tk`) && PathPrefix(`/`)
-  tls:
-    secretName: mongodb.admin.dev.ubivius.tk
